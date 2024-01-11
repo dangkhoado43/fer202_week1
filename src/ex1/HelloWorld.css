@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn a{
+    position: relative;
+    display: block;
+    height: 70px;
+    width: 220px;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    text-align: center;
+    border-radius: 32px;
+}
+
+.btn a span {
+    height: 88%;
+    width: 96%;
+    background: #111;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 32px;
+    line-height: 62px;
+    color: #f5f5f5;
+    font-size: 25px;
+}
+
+.btn a:hover {
+    animation: animateButton 0.4s linear infinite;
+}
+
+.title {
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    animation-name: myFadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    /* Add a delay of 3 seconds before starting the animation */
+}
+
+.title:hover {
+    color: rgb(4, 133, 192);
+    animation-iteration-count: 1;
+    /* Stop the animation on hover after one iteration */
+}
+
+@keyframes myFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animateButton {
+    100% {
+        filter: hue-rotate(-360deg);
+    }
+}
